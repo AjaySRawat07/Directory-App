@@ -1,10 +1,10 @@
+import { useContext } from "react";
+import UserDataContext from "../contexts/UserDataContext";
 
 const AddPerson = () =>{
+    const {usersData, setUsersData} = useContext(UserDataContext)
     return(
-        <div>
-            <div>
-                <button>Selected Bar</button>
-            </div>
+        <div className="">
             <div className="grid grid-cols-6 justify-evenly">
                 <h2 className="border border-black px-2">Name</h2>
                 <h2 className="border border-black px-2">Date of birth</h2>

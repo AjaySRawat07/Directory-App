@@ -1,12 +1,13 @@
-import Home from "./components/Home"
-
+import Body from "./components/Body";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
-        <Home />
-    </div>
-  )
+    <main className="w-full h-screen">
+      <Header />
+      <Body />
+    </main>
+  );
 }
 
-export default App
+export default App;
