@@ -17,11 +17,12 @@ const Body = () => {
           handleClick={() => setIsAddPersonActive(false)}
         />
       </div>
-      <div className="border border-black h-full">
+      <div className="border border-black h-full relative">
         <div className="border-b border-r w-fit px-5 py-2 border-black">
           {isAddPersonActive ? "Add New Person" : "Retrieve Information"}
         </div>
         {isAddPersonActive ? <AddPerson /> : <RetrieveInfo />}
+        
       </div>
     </div>
   );
